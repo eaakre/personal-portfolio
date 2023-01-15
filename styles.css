@@ -1,0 +1,127 @@
+:root {
+    --primary: rgb(10, 10, 19);
+    --secondary: rgb(194, 194, 189);
+    --alternate: rgb(230, 230, 230);
+    --white: rgb(243, 241, 241);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+}
+
+#navbar {
+    background-color: var(--primary);
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+}
+
+#navbar ul {
+    display: flex;
+    height: 100%;
+}
+
+#navbar ul a {
+    list-style: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--secondary);
+    height: 100%;
+}
+
+#navbar ul a:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+a li {
+    padding: 1.25em 1.25em;
+    height: 100%;
+    justify-content: center;
+}
+
+#welcome-section {
+    background-image: url(images/back.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+}
+
+#welcome-section h1 {
+    color: var(--primary);
+}
+
+#projects {
+    padding: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/project.jpg);
+    background-size: cover;
+    color: var(--alternate);
+}
+
+#projects > section {
+    display: flex;
+    flex-direction: row; 
+    color: var(--primary);   
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    margin: 2em 1em;
+    border-radius: 1em;
+    background-color: var(--white);
+}
+
+.project-tile img {
+    height: 150px;
+}
+
+.profile {
+    background-color: var(--white);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+@media screen and (max-width: 600px) {
+    #projects > section {
+        display: flex;
+        flex-direction: column;
+        color: var(--primary);   
+    }
+
+    .project-tile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em;
+        margin: 1em .5em;
+        border-radius: 1em;
+        background-color: var(--white);
+    }
+}
