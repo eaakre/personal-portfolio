@@ -64,6 +64,10 @@ a li {
     color: var(--primary);
 }
 
+#welcome-section p {
+    margin: 2em;
+}
+
 #projects {
     padding: 3em 0;
     display: flex;
@@ -131,7 +135,5 @@ a li {
         text-align: center;
     }
     
-    #welcome-section p {
-        margin: 2em;
-    }
+    
 }
