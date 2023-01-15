@@ -124,4 +124,14 @@ a li {
         border-radius: 1em;
         background-color: var(--white);
     }
+
+    #welcome-section {
+        display: flex-wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    #welcome-section p {
+        margin: 2em;
+    }
 }
